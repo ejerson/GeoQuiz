@@ -5,12 +5,12 @@ public class Question {
   private int mTextResId;
   private boolean mAnswerTrue;
 
-  private Question(int textResId, boolean answerTrue) {
+  public Question(int textResId, boolean answerTrue) {
     mTextResId = textResId;
     mAnswerTrue = answerTrue;
   }
 
-  private int getTextResId() {
+  public int getTextResId() {
     return mTextResId;
   }
 
@@ -18,11 +18,11 @@ public class Question {
     mTextResId = textResId;
   }
 
-  private boolean isAnswerTrue() {
+  public boolean isAnswerTrue() {
     return mAnswerTrue;
   }
 
-  private void setAnswerTrue(boolean answerTrue) {
+  public void setAnswerTrue(boolean answerTrue) {
     mAnswerTrue = answerTrue;
   }
 }
